@@ -1,0 +1,150 @@
+
+================================================================================================
+S1588 -- THE INVENTORY OF THE LIFT (bracket by FORM, sp(2) by NAME)
+================================================================================================
+  thresholds fixed in advance: relative singular cut 1e-08; proportionality read
+  from a NORMALISED residual (norm S1583: never a determinant).
+  heis part = INTRINSIC (the flag U = im X inside U^perp = ker X); the order's
+  Frobenius-orthocomplement reading is measured second and the agreement printed.
+
+================================================================================================
+L-P2 -- what c is made of, BY NAME:  sp(2) (+) so(eta|W) (+) n , and nothing else
+================================================================================================
+  dim so(5,3) = 28   dim c = 18
+  eta|W (named basis)               : diag(+1, +1, +1, -1)
+  dim n (INTRINSIC, flag of X)      : 9
+  dim n (Frobenius orthocomplement) : 9   [rank of the UNION of both readings: 9]
+  dim sp2 = 3   dim so(eta|W) = 6   sum = 18
+  rank of the GLUED basis sp2 + so + n : 18   (dim c = 18)
+  rank with n dropped                  : 9  <- the negative world of T5
+  n is an IDEAL in c, worst normalised residual : 3.189e-15
+  [sp2, so(eta|W)] , max |.|                    : 2.695e-16   (expect 0)
+  [so(eta|W), n] , max |.|                      : 6.033e-01   (expect NOT 0)
+  [sp2, n] , max |.|                            : 5.609e-01   (expect NOT 0)
+  every element of n is nilpotent (A^3)         : 1.139e-16
+  ✓ T1/L-P2: every basis element of c really commutes with X
+       (tooth: said NO on «an element of so(5,3) that is NOT in c» ⟹ able to fail)
+  ✓ T2/L-P2: every element of the intrinsic heis part really satisfies the flag conditions
+       (tooth: said NO on «an element of c that lies OUTSIDE n (a so(eta|W) generator)» ⟹ able to fail)
+  ✓ T5/L-P2: sp2 + so(eta|W) + n span c by RANK (3+6+9=18), and dropping n drops the rank
+       (tooth: said NO on «a world where dropping a summand changed nothing» ⟹ able to fail)
+
+================================================================================================
+L-P3 -- sp(2) BY NAME: its action on A = U, on W, on the centre Lambda^2 A
+================================================================================================
+  generator 0: action on A in the basis (u,v), trace = +1.110e-16
+    SA =
+      [ -0.703   -0.009]
+      [ -0.113    0.703]
+    action on W, max |A|_W| = 2.338e-16   (expect 0)
+  generator 1: action on A in the basis (u,v), trace = +2.082e-16
+    SA =
+      [  0.074   -0.450]
+      [ -0.887   -0.074]
+    action on W, max |A|_W| = 1.214e-16   (expect 0)
+  generator 2: action on A in the basis (u,v), trace = +2.012e-16
+    SA =
+      [ -0.030   -0.893]
+      [  0.448    0.030]
+    action on W, max |A|_W| = 1.041e-16   (expect 0)
+  worst |trace| over sp(2) generators : 2.082e-16  ==> action on Lambda^2 A is ZERO
+  worst |action on W|                 : 2.338e-16
+  ✓ T6/L-P3: the sp(2) block is TRACELESS on A and ZERO on W -- it is sl(2), not gl(2)
+       (tooth: said NO on «a gl(2) element carrying a trace» ⟹ able to fail)
+
+================================================================================================
+L-P1 (LOAD-BEARING) -- the BRACKET of the heis part, BY FORM.  Dimension is not an argument here.
+================================================================================================
+  dim centre of n = 1
+  centre vs span(X), normalised residual : 4.444e-16   ==> the centre is spanned by X ITSELF
+  the explicit generators a^w and X lie in n, worst residual : 1.197e-15
+  rank of {a^w} + {X} : 9   (dim n = 9)
+  beta read from the commutators [u^w_i , v^w_j] in the NAMED centre coordinate a^b = X:
+    beta =
+      [ -1.000   -0.000   -0.000   -0.000]
+      [ -0.000   -1.000   -0.000   -0.000]
+      [ -0.000   -0.000   -1.000   -0.000]
+      [ -0.000   -0.000   -0.000    1.000]
+    eta|W =
+      [  1.000    0.000    0.000    0.000]
+      [  0.000    1.000    0.000    0.000]
+      [  0.000    0.000    1.000    0.000]
+      [  0.000    0.000    0.000   -1.000]
+  rho = <beta, eta|W> / <eta|W, eta|W> = -1.000000    normalised residual ||beta - rho eta|W|| / ||beta|| = 0.000e+00
+  max |beta| = 1.000e+00    ==>  [n,n] is NOT zero   <- THE ONLY LINE HERE THAT COULD HAVE GONE THE OTHER WAY
+  on 200 RANDOM (w,a,w',b): bracket stays in span(X), worst residual 1.494e-14
+  and equals rho * eta|W(w,w') * det(a,b) with the SAME rho, worst rel. error 1.272e-14
+  ✓ T3/L-P1 (LOAD-BEARING): the heis bracket has family-I FORM with ONE shared beta = rho * eta|W, on the basis AND on 200 random arguments
+       (tooth: said NO on «a beta deliberately off eta|W (diag(1,2,3,4))» ⟹ able to fail)
+  ✓ T4/L-P1: [n,n] is NOT zero -- the ideal is Heisenberg, not abelian, so family I is ACTUALLY realised inside the parent
+       (tooth: said NO on «an abelian algebra of the same dimension 9» ⟹ able to fail)
+  ✓ T2b/L-P1: the centre of n is one-dimensional and spanned by X itself
+       (tooth: said NO on «a world where the centre needed a second generator» ⟹ able to fail)
+
+================================================================================================
+L-P4 (SHARP) -- equivariance under the FULL Levi sp(2) (+) so(eta|W): what survives
+================================================================================================
+  provenance of every target action (measured, not typed):
+    so(eta|W) generators: worst |action on A|      = 1.127e-16
+    sp(2)     generators: worst |action on W|      = 1.214e-16
+    sp(2)     generators: worst |induced on L^2 W| = 1.214e-16
+    so(eta|W) generators: worst |induced on L^2 A| = 5.204e-17
+  family I  (values in Lambda^2 A):  under so(eta|W) alone = 1   under the FULL Levi = 1
+  family II (values in Lambda^2 W):  under so(eta|W) alone = 6   under the FULL Levi = 0
+  ^ the contrast is a MOVING quantity: same machinery, same carrier, different group.
+    (the S1586 erratum E-1 is paid here by the CONSTRUCTION of the tooth, not by a
+     promise: nothing in this comparison is zero by construction.)
+  the surviving family-I solution has beta = -0.500000 * eta|W , normalised residual 2.184e-16
+  ✓ T7/L-P4: the T24 family DIES under the full Levi (0) while the SAME machinery on the SAME carrier under so(eta|W) alone gives 6 -- the contrast moves
+       (tooth: said NO on «a world where adding sp(2) changed nothing» ⟹ able to fail)
+  ✓ T7b/L-P4: the daughter metric SURVIVES the full Levi, still dim 1 and still ~ eta|W
+       (tooth: said NO on «a world where the daughter died too» ⟹ able to fail)
+
+================================================================================================
+L-P5 -- the COMPOSITION of the 6 (not the count): pairs c / *c under the Hodge star
+================================================================================================
+    Hodge star on Lambda^2 W =
+      [  0.0    0.0    0.0    0.0    0.0   -1.0]
+      [  0.0    0.0    0.0    0.0    1.0    0.0]
+      [  0.0    0.0    0.0    1.0    0.0    0.0]
+      [  0.0    0.0   -1.0    0.0    0.0    0.0]
+      [  0.0   -1.0    0.0    0.0    0.0    0.0]
+      [  1.0    0.0    0.0    0.0    0.0    0.0]
+  || *^2 + 1 ||_max = 0.000e+00   ==> *^2 = -1 on the LORENTZIAN daughter
+  [*, so(eta|W)-action on Lambda^2 W] , max = 0.000e+00
+  dim F (naive eta' family) = 3   dim *F = 3   dim (F + *F) = 6   [F intersect *F = 0]
+  F really sits inside the 6-dim solution space, worst residual 1.024e-15
+  dim (F + F) = 3  <- the negative world of T9: doubling F alone spans nothing new
+  ✓ T8/L-P5: *^2 = -1 on the Lorentzian daughter and * commutes with the so(eta|W) action
+       (tooth: said NO on «the Euclidean daughter (4,0), where *^2 = +1» ⟹ able to fail)
+  ✓ T9/L-P5: the six is COMPOSED as F (+) *F -- three real eta' times a two-dimensional commutant, not six unrelated brackets
+       (tooth: said NO on «F doubled with itself, which spans only three» ⟹ able to fail)
+
+================================================================================================
+L-P6 -- the CONTROL carrier: parent (4,4), daughter (2,2), where *^2 = +1
+================================================================================================
+  dim so(4,4) = 28   dim c = 18
+  eta|W (named basis)               : diag(+1, +1, -1, -1)
+  dim n (INTRINSIC, flag of X)      : 9
+  dim n (Frobenius orthocomplement) : 9   [rank of the UNION of both readings: 9]
+  dim sp2 = 3   dim so(eta|W) = 6   sum = 18
+  eta|W(4,4) = diag(+1, +1, -1, -1)   || *^2 - 1 || = 0.000e+00   ==> *^2 = +1 (SPLIT, not complex)
+  * eigenvalues: 3 at +1 and 3 at -1  ==> the six splits as 3 (+) 3 EIGENSPACES, not as a complex structure
+  family II under so alone = 6   under the FULL Levi = 0   family I under so alone = 1
+  ✓ T10/L-P6: on the (2,2) daughter the star SQUARES TO +1 and the six splits into two real eigenspaces 3+3 -- same COUNT, different COMPOSITION
+       (tooth: said NO on «the (5,3) numbers substituted as (4,4): there *^2 = -1, no real eigenvalues at all» ⟹ able to fail)
+
+================================================================================================
+VERDICT LINES (S1588)
+================================================================================================
+  L-P1 heis bracket, FORM  : beta = -1.000000 * eta|W , residual 0.000e+00 ; [n,n] != 0 (max|beta| = 1.000e+00)
+       on 200 random args  : one shared rho, worst rel. error 1.272e-14 ; image in span(X) 1.494e-14
+  L-P2 c by name           : 3 + 6 + 9 = rank 18 = dim c 18 ; n ideal 3.2e-15 ; [sp2,so] 2.7e-16
+       intrinsic n vs Frobenius orthocomplement : 9 vs 9 (union rank 9)
+  L-P3 sp(2) by name       : traceless 2.1e-16 , zero on W 2.3e-16 ==> sl(2), trivial on the centre
+  L-P4 FULL Levi           : family I 1 -> 1 (survives) ; family II 6 -> 0 (dies)
+  L-P5 composition of 6    : F 3 (+) *F 3 = 6 , *^2 = -1 (0.0e+00)
+  L-P6 control (4,4)       : *^2 = +1 (0.0e+00) , split 3+3 , family II 6 -> 0
+
+SCORE [S1588 lift_inventory]: 12 ✓ / 0 ✗ / 0 ☠ EMPTY
+FAILS: 0

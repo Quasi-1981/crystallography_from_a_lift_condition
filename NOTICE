@@ -1,0 +1,13 @@
+Crystallography from a lift condition
+(Geometry of the vacuum, floor 0)
+Copyright 2026 Sobol Volodymyr (Quasi-1981)
+
+This product includes software developed by the author with the participation of
+AI models (Anthropic Claude). Per-artifact attribution is recorded in the git
+history via Co-Authored-By trailers; the models are also named in .zenodo.json.
+
+The probes depend on SymPy (BSD-3-Clause) for symbolic arithmetic. SymPy is not
+redistributed here; it is a declared dependency.
+
+Code is licensed under the Apache License, Version 2.0 (see LICENSE-CODE).
+The text of the paper is licensed under CC BY 4.0 (see LICENSE).

@@ -1,0 +1,27 @@
+==========================================================================
+S1629 — n_min EXACT: exhaustive rank-3 classes det<=43, split-disc filter, N-3
+==========================================================================
+
+   scanned reduced Gram = 1150 ; split-disc (sections) = 311 ; N-3 teeth all = True
+
+   holohedry     n_min(exact)  takt-18   match   witness Gram (reduced)
+   ----------------------------------------------------------------------
+   cubic            1             1     True    [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+   tetragonal       2             2     True    [[1, 0, 0], [0, 1, 0], [0, 0, 2]]
+   hexagonal        6             6     True    [[2, -1, 0], [-1, 2, 0], [0, 0, 2]]
+   orthorhombic     7             7     True    [[1, 0, 0], [0, 2, -1], [0, -1, 4]]
+   monoclinic      11            11     True    [[1, 0, 0], [0, 3, -1], [0, -1, 4]]
+   rhombohedral    13            13     True    [[2, -1, -1], [-1, 2, 0], [-1, 0, 5]]
+   triclinic       43            43     True    [[3, -1, -1], [-1, 4, 2], [-1, 2, 5]]
+
+-- completeness control (det<=6 should be exactly cubic/tetragonal/hexagonal) --
+   det<=6 holohedries: ['cubic', 'hexagonal', 'tetragonal']  (expect {cubic,tetragonal,hexagonal})
+
+-- VERDICT --
+   [OK] n_min exact == takt-18 (n_min is now a THEOREM, box was already exact)
+   [OK] N-3 teeth on every holohedry
+   [OK] completeness control det<=6
+
+   TEETH: 3/3 -> VERDICT OK
+
+[dump] .\S1629_nmin_exact_dump.jsonl

@@ -1,0 +1,9 @@
+{"kind": "control", "det1_genera": 1, "ok": true}
+{"kind": "det", "det": 1, "snf_buckets": 1, "genera": 1}
+{"kind": "det", "det": 2, "snf_buckets": 1, "genera": 1}
+{"kind": "det", "det": 3, "snf_buckets": 1, "genera": 2}
+{"kind": "det", "det": 4, "snf_buckets": 2, "genera": 4}
+{"kind": "det", "det": 5, "snf_buckets": 1, "genera": 2}
+{"kind": "det", "det": 6, "snf_buckets": 1, "genera": 2}
+{"kind": "det", "det": 7, "snf_buckets": 1, "genera": 1}
+{"kind": "det", "det": 8, "snf_buckets": 3, "genera": 6}

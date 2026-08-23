@@ -1,0 +1,113 @@
+
+================================================================================================
+S1602 -- the structure-compactifier (two candidates, one probe)
+================================================================================================
+  ★verdict lines are gated on their own teeth (norm S1598); each 'complete/transitive'
+   column carries a negative world ON THE CRITERION (norm S1595).
+
+================================================================================================
+C-P0 -- controls: sigma nondegenerate, and G lies in Sp(V,sigma)
+================================================================================================
+  sigma = B = -eta|W (x) omega_A : antisymmetry 0.0e+00 , rank 8 of 8
+  all 9 Levi generators in sp(V,sigma): worst |Z^T B + B Z| = 0.0e+00
+  negative world (identity, non-symplectic): |I^T B + B I| = 2.0e+00
+  ✓ T1/C-P0a: the symplectic form sigma on the translations is NON-degenerate (rank 8)
+       (tooth: said NO on «a deliberately degenerate form» ⟹ able to fail)
+  ✓ T2/C-P0b: all 9 Levi generators lie in sp(V,sigma) -- so G is a subgroup of Sp(8,R)
+       (tooth: said NO on «the identity, which is not symplectic» ⟹ able to fail)
+
+================================================================================================
+C-P1 (LOAD-BEARING, a) -- covolume of Gamma in SO(3,1): N(R)/vol(B_R), with the exponential-growth trap disarmed
+================================================================================================
+  P  (integer hyperbolic, S1598) : max|lambda| = 13.928
+  P' (perm-conjugate, other axis): max|lambda| = 13.928
+      R     vol(B_R) |  N_arith     ratio |  N_cyc     ratio | N_free     ratio
+    1.5        22.05 |        9    0.4082 |      1    0.0454 |      1    0.0454
+    2.0        73.17 |       21    0.2870 |      1    0.0137 |      1    0.0137
+    2.5       217.41 |       93    0.4278 |      1    0.0046 |      1    0.0046
+    3.0       614.85 |      197    0.3204 |      3    0.0049 |      3    0.0049
+    3.5      1700.59 |      437    0.2570 |      3    0.0018 |      3    0.0018
+    4.0      4657.34 |     1345    0.2888 |      3    0.0006 |      3    0.0006
+  ★decay ratio [ratio(R_max)/ratio(R_mid)]: arith 0.901 , cyclic 0.132 , free 0.132
+   finite covolume <=> ratio does not decay to 0 (threshold 0.5); exponential growth of
+   the free group does NOT rescue it -- that is the trap this criterion is built against.
+  ✓ T3/C-P1 (LOAD-BEARING, ON THE CRITERION): the point group's orbit density N(R)/vol(B_R) does NOT decay (finite covolume) -- and the detector is NOT fooled by exponential growth
+       (tooth: said NO on «the cyclic subgroup <P> (linear growth, infinite covolume)» ⟹ able to fail)
+
+================================================================================================
+C-P2 (b, existence) -- a positive compatible J exists; positivity is MEASURED
+================================================================================================
+     generic: |J^2+I|=8.4e-16 , |J^T B J - B|=6.7e-16 , g eigenvalues in [+0.428, +2.337] , SPD=True
+     adapted: |J^2+I|=0.0e+00 , |J^T B J - B|=0.0e+00 , g eigenvalues in [+1.000, +1.000] , SPD=True
+  indefinite: |J^2+I|=0.0e+00 , |J^T B J - B|=0.0e+00 , g eigenvalues in [-1.000, +1.000] , SPD=False
+  ✓ T4/C-P2: the adapted J is a genuine compatible complex structure and g=BJ is POSITIVE definite (positivity measured, not assumed)
+       (tooth: said NO on «the indefinite compatible J', whose g' has a negative eigenvalue» ⟹ able to fail)
+
+================================================================================================
+C-P3 (LOAD-BEARING, b-i) -- the stabiliser of a positive J in the Levi is COMPACT
+================================================================================================
+  adapted J0 : dim stab = 4 , Killing eigenvalues on stab = [-4.000 .. -4.000]  => NEG-DEF (compact)
+  indefinite J': dim stab = 3 , Killing eigenvalues on stab = [-4.000 .. +4.000]  => NOT neg-def (non-compact)
+  ★positivity cuts the non-compact Levi so(3,1)+sl(2) down to a COMPACT stabiliser;
+   the indefinite J' keeps a boost -> its Killing form has a positive direction.
+  ✓ T5/C-P3 (ON THE CRITERION): the Killing form is NEGATIVE-DEFINITE on the stabiliser of the positive J -- the stabiliser is COMPACT
+       (tooth: said NO on «the indefinite J', whose stabiliser carries a boost (Killing not neg-def)» ⟹ able to fail)
+
+================================================================================================
+C-P4 (b-ii, bare sigma) -- how many orbits?  dim(G.J) vs dim{positive compatible J}
+================================================================================================
+  dim(G . J0)        = 5   (G = SO(3,1) x SL(2), dim 9)
+  dim{compat. pos. J} = 20   (Siegel space Sp(8)/U(4), expected 20)
+  dim(Sp(8) . J0)    = 20   (full symplectic group -- transitive negative world)
+  => codim of the G-orbit in the space of positive J = 15 > 0
+     ==> on the BARE sigma, positivity leaves a residual moduli: SEVERAL G-orbits.
+  ✓ T6/C-P4: the G-orbit is a PROPER submanifold of the space of positive J (several orbits on the bare sigma) -- and the detector CAN say 'one orbit'
+       (tooth: said NO on «the full Sp(8), which acts transitively (dim orbit = dim space)» ⟹ able to fail)
+
+================================================================================================
+C-P5 (b-ii, adapted) -- the adapted family (t in H^3, tau in H^2) is ONE orbit G/K
+================================================================================================
+  transitivity: for 40 random adapted J(t,tau), worst residual of g.J0.g^-1 - J(t,tau) = 7.85e-13
+   (g = g_W (x) h with g_W in SO+(3,1) mapping t0->t, h in SL(2) mapping tau0->tau)
+  orbit invariant dim stab : adapted J's = 4 (= dim K = SO(3)xSO(2)) , another adapted = 4 , GENERIC positive J = 0
+  ★ so the adapted family is exactly ONE G-orbit = G/K = H^3 x H^2 (transitive, compact
+    stabiliser K); a NON-adapted positive J has a different stab dim -> a DIFFERENT orbit.
+  ✓ T7/C-P5 (ON THE CRITERION, transitivity): G acts TRANSITIVELY on the adapted family (one orbit, compact stab K) -- and the detector rejects a non-adapted J
+       (tooth: said NO on «a generic non-adapted positive J (different stabiliser dimension)» ⟹ able to fail)
+
+================================================================================================
+C-P6 (c, SPLICE) -- gated on (a) finite covolume AND (b) one adapted orbit
+================================================================================================
+  ✓ both gates green:
+    - the adapted moduli of positive J is G/K = H^3 x H^2 (dim 3+2 = 5);
+    - Gamma (the beta-integral point group) has finite covolume on H^3 (C-P1);
+    ==> the quotient (H^3 x H^2)/Gamma has FINITE VOLUME.
+    ==> 'a functional on this space would have a compact of finite volume to live
+        on' -- WITHOUT building the functional (that is future work).
+
+================================================================================================
+★DIVIDEND (mandatory) -- the AX-dimer, from axiom to a forced-spontaneous structure
+================================================================================================
+  the old assembly's AX-dimer ('time exists' = 1 bit, an AXIOM) becomes, here, a
+  DERIVED forced-spontaneous structure:
+    · Heisenberg unitarity FORCES the existence of a marked direction (a positive
+      J exists, C-P2) -- existence is not assumed, it is required by unitarity;
+    · its VALUE is SPONTANEOUS -- the adapted J's are one orbit G/K = H^3 x H^2
+      (C-P5), so no J is singled out; the choice is a spontaneous point on the orbit;
+    · beta-integrality makes its MODULI FINITE VOLUME -- (H^3 x H^2)/Gamma (C-P1+C-P6).
+  the axiom gets a CAUSE (unitarity) and a PRICE (a spontaneous choice on a
+  finite-volume moduli).  no new constant is spent.
+
+================================================================================================
+VERDICT LINES (S1602) -- each gated on its own tooth (norm S1598)
+================================================================================================
+  C-P1 (a) COVOLUME : decay arith 0.90 vs cyclic 0.13 vs free 0.13  ==> Gamma is THICK: finite covolume (thin subgroups fall)
+  C-P3 (b-i) STAB   : dim stab 4, Killing max -4.00  ==> positivity CUTS the Levi to a COMPACT stabiliser
+  C-P4 (b-ii bare)  : dim G-orbit 5 < dim Siegel 20  ==> bare positivity leaves SEVERAL orbits (hidden input on sigma alone)
+  C-P5 (b-ii adapt) : transit resid 7.9e-13, stab dim 4=4  ==> the ADAPTED family (house W(x)A) is ONE orbit G/K = H^3 x H^2 (spontaneous)
+  ==> (a) arithmetic compactifier STANDS (thick); (b) positive compactifier: stabiliser
+      COMPACT and adapted moduli ONE spontaneous orbit -- bare-sigma several orbits is
+      resolved by the HOUSE tensor structure, not a new input.  (c) splice fires.
+
+SCORE [S1602 compactifier]: 7 ✓ / 0 ✗ / 0 ☠ EMPTY
+FAILS: 0

@@ -1,0 +1,50 @@
+==========================================================================
+S1622 — covolume of O^+(I_{3,1}) by number: Vinberg -> [3,4,4] -> Lobachevsky volume
+==========================================================================
+
+-- roots (Vinberg simple roots, controlling vector e4) --
+   r1 = (1, -1, 0, 0)  norm=2  reflection integral=True primitive=True  OK
+   r2 = (0, 1, -1, 0)  norm=2  reflection integral=True primitive=True  OK
+   r3 = (0, 0, 1, 0)   norm=1  reflection integral=True primitive=True  OK
+   r4 = (-1, -1, -1, 1) norm=2  reflection integral=True primitive=True  OK
+
+-- Coxeter diagram (m_ij from cos = -(ri.rj)/sqrt(ni nj)) --
+   r1-r2: m=3  r2-r3: m=4  r3-r4: m=4   (chain labels)
+   r1-r3: m=2  r1-r4: m=2  r2-r4: m=2   (should be 2 = orthogonal)
+   diagram = [3,4,4] linear : True  -> [3,4,4]: OK
+   cosine-Gram signature = (3,1)  (expect (3,1) hyperbolic): OK
+
+-- Lobachevsky control: L(pi/6)=0.5074708 (0.5074708) L(pi/4)=0.4579828 (0.4579819) : OK
+
+-- ORTHOSCHEME VOLUME --
+   delta = 0.7853981634 (expect pi/4 = 0.7853981634)
+   V(covolume) = 0.0763304662   reader NJ 0.0763304662   coincide: True
+
+-- DENSITY PROGNOSIS: 1/(|Stab(e4)|*V) = 1/(48*0.07633047) = 0.27293602  (reader 0.27294)
+
+-- DIRECT COUNT (native S1602): N(R)=#{v.v=-1, v4<=cosh R}, rho=N/vol(B_R) --
+   R    vol(B_R)     N(R)     rho      (S1602/limit)
+   2        73.17       21   0.28701
+   3       614.85      197   0.32040
+   4      4657.34     1345   0.28879 <- S1602: N=1345 rho=0.2888
+   5     34567.68     9361   0.27080
+   6    255616.93    69933   0.27359
+   7   1889002.41   515165   0.27272
+   K-1 (native S1602 R=4): N=1345 expect 1345 -> PASS
+
+-- KILL-B (object match): |rho_pred - rho(R=7)|/rho_pred = 0.0008 (>5%: NOT triggered)
+   => O^+(I_{3,1}) = reflection group with [3,4,4] orthoscheme fundamental
+      (no hidden symmetry); density S1602 confirmed by covolume number.
+
+-- VERDICT --
+   [OK] roots valid
+   [OK] diagram [3,4,4]
+   [OK] signature (3,1)
+   [OK] Lobachevsky ctrl
+   [OK] V=0.0763304662
+   [OK] K-1 S1602 R=4=1345
+   [OK] density match (kill-B not fired)
+
+   TEETH: 7/7 -> VERDICT OK
+
+[dump] .\S1622_covolume_dump.jsonl

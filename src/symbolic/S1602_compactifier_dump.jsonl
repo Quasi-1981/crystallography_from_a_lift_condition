@@ -1,0 +1,7 @@
+{"rank": 8, "rec": "C-P0", "worst_sp": 0.0}
+{"N_arith": [9, 21, 93, 197, 437, 1345], "N_cyc": [1, 1, 1, 3, 3, 3], "N_free": [1, 1, 1, 3, 3, 3], "R": [1.5, 2.0, 2.5, 3.0, 3.5, 4.0], "decay": [0.9013377951940472, 0.132017506061879, 0.132017506061879], "rec": "C-P1"}
+{"adapted_spd": true, "gen_spd": true, "indef_min": -1.0, "rec": "C-P2"}
+{"adapted_kill_max": -3.9999999999999956, "adapted_stab": 4, "indef_kill_max": 4.0, "indef_stab": 3, "rec": "C-P3"}
+{"dim_G": 5, "dim_Sp": 20, "dim_siegel": 20, "rec": "C-P4"}
+{"rec": "C-P5", "s_adapted": 4, "s_adapted2": 4, "s_generic": 0, "worst_resid": 7.851497230149107e-13}
+{"gate_a": true, "gate_b": true, "rec": "C-P6"}

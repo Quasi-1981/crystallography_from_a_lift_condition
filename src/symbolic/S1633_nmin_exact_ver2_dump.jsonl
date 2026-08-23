@@ -1,0 +1,8 @@
+{"kind": "summary", "scanned": 1150, "split_exact": 311, "controls": true, "all_match": true, "teeth": true, "box_vs_exact_disagreements": 0}
+{"kind": "nmin", "type": "cubic", "n_min": 1, "takt18": 1, "match": true}
+{"kind": "nmin", "type": "tetragonal", "n_min": 2, "takt18": 2, "match": true}
+{"kind": "nmin", "type": "hexagonal", "n_min": 6, "takt18": 6, "match": true}
+{"kind": "nmin", "type": "orthorhombic", "n_min": 7, "takt18": 7, "match": true}
+{"kind": "nmin", "type": "monoclinic", "n_min": 11, "takt18": 11, "match": true}
+{"kind": "nmin", "type": "rhombohedral", "n_min": 13, "takt18": 13, "match": true}
+{"kind": "nmin", "type": "triclinic", "n_min": 43, "takt18": 43, "match": true}

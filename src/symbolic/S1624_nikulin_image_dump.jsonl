@@ -1,0 +1,2 @@
+{"kind": "P1", "sections_checked": 10, "all_split": true}
+{"kind": "P2", "H2": 3, "img2": ["oblique", "rectangular", "square"], "H3": 7, "img3": ["cubic", "hexagonal", "monoclinic", "orthorhombic", "rhombohedral", "tetragonal", "triclinic"], "meas_fp4": 0, "pred_fp4": 13, "leak": 13}

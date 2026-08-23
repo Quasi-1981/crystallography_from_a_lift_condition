@@ -1,0 +1,33 @@
+==========================================================================
+S1633 (S1629 ver:2) — n_min with EXACT split-disc filter (SNF-free generator search)
+==========================================================================
+
+-- controls (exact filter) --
+   cubic n=1              det=1 split=True (expect True) OK
+   tetragonal n=2         det=2 split=True (expect True) OK
+   A2 hexagonal n=3       det=3 split=False (expect False) OK
+   orthorhombic n=7-ish   det=7 split=True (expect True) OK
+   controls: PASS
+
+   scanned=1150  split(exact)=311  N-3 teeth all=True
+
+   holohedry     n_min(exact filter)   S1629/takt-18   match
+   cubic            1                     1          True
+   tetragonal       2                     2          True
+   hexagonal        6                     6          True
+   orthorhombic     7                     7          True
+   monoclinic      11                    11          True
+   rhombohedral    13                    13          True
+   triclinic       43                    43          True
+
+-- Kill-V: old box-filter vs new exact-filter disagreements: 0 --
+
+-- VERDICT --
+   [OK] controls
+   [OK] n_min STABLE == S1629/takt-18 (exact filter confirms theorem)
+   [OK] N-3 teeth
+   [OK] filter change: no verdict changed (box was already correct here)
+
+   TEETH: 3/3 -> VERDICT OK
+
+[dump] .\S1633_nmin_exact_ver2_dump.jsonl

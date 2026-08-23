@@ -1,0 +1,7 @@
+{"rank": 8, "rec": "B"}
+{"bad": false, "good": true, "rb": 8.753233225798651e-06, "rec": "criterion", "rg": 0.0}
+{"g0_n": 50, "g0_pass": 0, "g1": true, "rec": "price", "step": 1.0}
+{"dev": 0.0, "ratios": [0.25, 4.0, 9.0], "rec": "step"}
+{"e_gen": false, "e_int": true, "om_int": [true, true], "p_gen": false, "p_int": true, "rec": "product"}
+{"rec": "continuous", "worst": 0.10499999999999998, "zero": 0.0}
+{"infinite": true, "maxev": 13.928203230275516, "order": null, "order_bad": 4, "rec": "vertex", "va": [-2, -2, -2, -2], "vb": [-2, -2, -2, 2]}

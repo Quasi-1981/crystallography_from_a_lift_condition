@@ -1,0 +1,17 @@
+# Python bytecode: regenerated on every run, never part of the record.
+__pycache__/
+*.py[cod]
+
+# LaTeX build intermediates (the shipped .pdf is the record; these are not)
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db

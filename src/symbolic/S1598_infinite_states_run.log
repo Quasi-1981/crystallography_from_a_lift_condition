@@ -1,0 +1,102 @@
+
+================================================================================================
+S1598 -- the price of lifting a lattice into the GROUP of floor 0
+================================================================================================
+  ★an infinite state is represented FINITELY: Lambda = M Z^8, and a point-group
+   element as (g,h) together with U = M^-1 (g (x) h) M in GL(8,Z).
+  ★the word COMPLETE is used nowhere in this probe except where a theorem stands.
+
+  B = -eta|W (x) omega_A on W(x)A : antisymmetry 0.0e+00 , rank 8 of 8
+  ✓ T1: the bracket form B on the translations is NON-degenerate (rank 8)
+       (tooth: said NO on «a deliberately degenerate form» ⟹ able to fail)
+
+================================================================================================
+★THE CRITERION OF COMMENSURABILITY -- published with its own two worlds
+================================================================================================
+  {2,3,5}*0.37 : verdict True , step 0.006491 , residual 0.000e+00
+  {1, sqrt 2}  : verdict False , step 0.005917 , residual 8.753e-06
+  ==> a naive real-gcd would have said YES to the second by driving the step to the
+      tolerance; the step is refused once it becomes negligible against the data.
+  ✓ T2 ★ON THE CRITERION ITSELF (norm S1595, lifted from my own address): the commensurability test says YES on {2,3,5}c and NO on {1, sqrt 2} -- it can fail
+       (tooth: said NO on «a world where the test waved the incommensurable pair through» ⟹ able to fail)
+
+================================================================================================
+I-P1 (LOAD-BEARING) -- the price: does a generic Lambda lift to a DISCRETE subgroup?
+================================================================================================
+  G0 generic  : the values of B on Lambda are commensurable in 0 of 50 draws
+  G1 B-integral: verdict True , step 1.000000 , residual 0.000e+00
+     (its value matrix has entries [-1, 0, 1])
+  ==> the condition is NOT empty: it is exactly  M^T B M  integral up to one factor.
+  ✓ T3/I-P1 (LOAD-BEARING): a generic lattice does NOT lift to a discrete subgroup, while the B-integral family does -- so the price of the lift is a real condition, and the house-specific content of the map is non-empty
+       (tooth: said NO on «a world where the generic lattices passed too» ⟹ able to fail)
+
+================================================================================================
+I-P3 -- the step of the centre: a NEW input, or the SAME bit as input-1 of S1590?
+================================================================================================
+       t   step c(t Lambda)   ratio to c(Lambda)        t^2
+    0.50           0.250000             0.250000     0.2500
+    2.00           4.000000             4.000000     4.0000
+    3.00           9.000000             9.000000     9.0000
+  worst |ratio - t^2| = 0.000e+00
+  ==> the grading delta of S1590 acts as (Lambda, c) -> (e^t Lambda, e^{2t} c):
+      the step is NOT a new input, it is the SAME bit as input-1 (the scale).
+  ✓ T4/I-P3: the step of the centre scales as t^2 while the lattice scales as t -- so it rides on the scale bit already counted as input-1 in S1590, and is not a new one
+       (tooth: said NO on «the exponent 1, which must disagree» ⟹ able to fail)
+
+================================================================================================
+I-P4 -- the product family L_W (x) L_A: what the condition reduces to
+================================================================================================
+  omega on a RANK-2 lattice lands in det*Z : identity True , random True  (always, since only one independent value exists)
+  L_W generic : eta|L_W commensurable False  ->  the product lifts False
+  L_W = Z^4   : eta|L_W commensurable True  ->  the product lifts True
+  ==> on the product family the price reduces EXACTLY to: eta|L_W integral up to a factor.
+  ✓ T5/I-P4: omega on a rank-two lattice is always commensurable, while a generic eta|L_W is not -- so the whole price sits on the W factor
+       (tooth: said NO on «Z^4, where the W factor passes and so does the product» ⟹ able to fail)
+
+================================================================================================
+I-P5 -- the CONTINUOUS part of the stabiliser of a full-rank Lambda: verified, not postulated
+================================================================================================
+  for every non-zero generator X of the Levi and small t: distance of M^-1 exp(tX) M to the nearest INTEGER matrix = 1.050e-01
+  ★moving contrast: at X = 0 the same distance is 0.000e+00
+  ==> no one-parameter subgroup preserves Lambda: the continuous part is 0.
+  ✓ T6/I-P5: the continuous part of the stabiliser of a full-rank lattice is zero -- MEASURED against a moving contrast, not postulated
+       (tooth: said NO on «a world where even X = 0 was counted as moving» ⟹ able to fail)
+
+================================================================================================
+I-P6 (THE VERTEX) -- is the point group finite?  If it is not, maximality selects nothing
+================================================================================================
+  ★the witness is SEARCHED, not guessed: my first guess (reflections in e1 and in
+   (1,1,1,1)) turned out to have order 4, and the order detector caught it -- that
+   failed guess is kept below as the negative world.  See the seal §1.
+  named convention of the search (introduced at probe time, said out loud): integral
+  reflections in vectors with entries in -2..2; a POSITIVE find needs no completeness.
+  integral reflections in the named box : 256
+  witness : reflection in (-2, -2, -2, -2) composed with reflection in (-2, -2, -2, 2)
+    P =
+      [    3     2     2     4]
+      [    2     3     2     4]
+      [    2     2     3     4]
+      [    4     4     4     7]
+  P integral True , isometry 0.0e+00 , max |lambda| = 13.928203 , measured order = None
+  ★negative world (my first guess): reflections in e1 and (1,1,1,1) give max |lambda| = 1.000000 and a FINITE order 4
+  ==> the point group of Z^4 (x) Z^2 contains an element of infinite order : True   ⟹ the group is INFINITE
+  ==> 'maximality of the point group' selects NOTHING here: maximal is not finite, and
+      the infinite part is exactly what a CHOSEN DIRECTION would have to kill --
+      and that choice is input-2 of S1590 (the frame).
+  ✓ T7/I-P6: the witness is a genuine INTEGRAL isometry of (Z^4, eta) whose ORDER is measured to be infinite (and whose spectral radius exceeds 1) -- the point group is INFINITE
+       (tooth: said NO on «my own first guess, whose order is finite» ⟹ able to fail)
+
+================================================================================================
+VERDICT LINES (S1598)
+================================================================================================
+  I-P1 PRICE     : generic Lambda lifts in 0 of 50 ; the B-integral family lifts (step 1.0000) ==> the condition is NOT empty
+                   and it is exactly: M^T B M integral up to one common factor
+  I-P2 CRITERION : {2,3,5}c -> True , {1, sqrt2} -> False  (the test can fail)
+  I-P3 STEP      : c(t Lambda)/c(Lambda) = t^2 (worst deviation 0.0e+00) ==> the step rides on input-1 of S1590, it is NOT a new bit
+  I-P4 PRODUCT   : omega always commensurable ; the price reduces to eta|L_W integral
+  I-P5 CONTINUOUS: 0, measured (1.0e-01 against 0.0e+00)
+  I-P6 VERTEX    : witness of INFINITE order (measured: None) with |lambda|max = 13.9282 ==> the point group is INFINITE ==> maximality selects NOTHING without a chosen direction  ⟨my first guess had order 4⟩
+  ==> KILL-(iii) FIRED, as carved before the run: no canonical road without a functional; the fork returns to the author.
+
+SCORE [S1598 infinite_states]: 7 ✓ / 0 ✗ / 0 ☠ EMPTY
+FAILS: 0

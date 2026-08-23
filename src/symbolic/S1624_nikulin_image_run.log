@@ -1,0 +1,39 @@
+==========================================================================
+S1624 — classification law Sigma|->L_beta|->Im H : section <=> split disc form <1/n>
+==========================================================================
+   loaded 0 measured p=4 section witnesses from S1620 dump
+
+-- P1: forward direction — every measured section has split disc form <1/n> --
+   checked 10 sections (p=2,3 reps + all 0 p=4) : split-disc = ALL  (0 violations)
+
+-- P2: predict Im H from split-disc lattices alone --
+   p=2 (D<=150): predicted ['oblique', 'rectangular', 'square']  -> H(2)=3 (3/4, hexagon excluded)
+   p=3 (D<=80): predicted ['cubic', 'hexagonal', 'monoclinic', 'orthorhombic', 'rhombohedral', 'tetragonal', 'triclinic']  -> H(3)=7
+   p=4 (reduced Gram, det<=34, dmax=16): measured fingerprints=0 ; abstract split-disc found=13
+      COVERAGE of measured 13 by abstract enum: 0/0
+      abstract subset of measured (no leak): False ; leak count=13
+      LEAK fingerprints (split-disc holohedry not among 13 sections -> refines H(4)>13):
+        |Aut|=384
+        |Aut|=96
+        |Aut|=32
+        |Aut|=16
+        |Aut|=48
+        |Aut|=16
+        |Aut|=24
+        |Aut|=8
+
+-- P3: hexagon obstruction (named) --
+   A2 x1 det=3 cyclic=True Z/3 a=2 QR=False -> section=False
+   A2 x2 det=12 cyclic=False Z/12 a=None QR=None -> section=False
+   A2 x3 det=27 cyclic=False Z/27 a=None QR=None -> section=False
+   A2 x4 det=48 cyclic=False Z/48 a=None QR=None -> section=False
+   => <2/3>: 2 not QR mod 3 (squares={1}); scalings non-cyclic -> hexagon never split -> excluded.
+
+-- KILL STATUS --
+   Kill-A (some section not split): NOT triggered
+   Kill-B (p2/p3 image != 3/7):     NOT triggered (H2=3,H3=7)
+   Kill-V (p4 blind leak/miss):     REFINEMENT: H(4)>13 candidate found
+
+   TEETH: 3/3 core -> VERDICT OK
+
+[dump] .\S1624_nikulin_image_dump.jsonl

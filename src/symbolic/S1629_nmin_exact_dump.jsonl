@@ -1,0 +1,8 @@
+{"kind": "summary", "scanned": 1150, "split": 311, "teeth_all": true, "all_match": true, "ctrl": true}
+{"kind": "nmin", "type": "cubic", "n_min": 1, "takt18": 1, "match": true, "gram": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]}
+{"kind": "nmin", "type": "tetragonal", "n_min": 2, "takt18": 2, "match": true, "gram": [[1, 0, 0], [0, 1, 0], [0, 0, 2]]}
+{"kind": "nmin", "type": "hexagonal", "n_min": 6, "takt18": 6, "match": true, "gram": [[2, -1, 0], [-1, 2, 0], [0, 0, 2]]}
+{"kind": "nmin", "type": "orthorhombic", "n_min": 7, "takt18": 7, "match": true, "gram": [[1, 0, 0], [0, 2, -1], [0, -1, 4]]}
+{"kind": "nmin", "type": "monoclinic", "n_min": 11, "takt18": 11, "match": true, "gram": [[1, 0, 0], [0, 3, -1], [0, -1, 4]]}
+{"kind": "nmin", "type": "rhombohedral", "n_min": 13, "takt18": 13, "match": true, "gram": [[2, -1, -1], [-1, 2, 0], [-1, 0, 5]]}
+{"kind": "nmin", "type": "triclinic", "n_min": 43, "takt18": 43, "match": true, "gram": [[3, -1, -1], [-1, 4, 2], [-1, 2, 5]]}

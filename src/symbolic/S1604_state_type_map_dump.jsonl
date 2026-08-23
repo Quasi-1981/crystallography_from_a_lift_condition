@@ -1,0 +1,6 @@
+{"nA": 12, "nW": 96, "nW_soplus": 24, "rec": "M-P0"}
+{"dims_found": [0, 2, 4], "dims_random": [0], "rec": "M-P1"}
+{"rec": "M-P2", "rows": [{"dim": 4, "eff": 96, "has3": true, "name": "adapted (isotropic W)", "order": 192}, {"dim": 2, "eff": 16, "has3": false, "name": "SO(2)_W x SO(2)_A type", "order": 32}, {"dim": 2, "eff": 2, "has3": false, "name": "SO(2)_A-avg type", "order": 4}, {"dim": 0, "eff": 1, "has3": false, "name": "generic (non-product)", "order": 2}]}
+{"commutes_I": true, "commutes_P": false, "ordP": null, "rec": "T6"}
+{"A_types": [["tau=i (Z/4)", 192], ["tau=rho (Z/6)", 288], ["tau=generic (Z/2)", 96]], "rec": "M-P3", "rep_invariant": true}
+{"rec": "M-P5", "table": [{"dim": 4, "eff": 96, "has3": true, "name": "adapted (isotropic W)", "order": 192}, {"dim": 2, "eff": 16, "has3": false, "name": "SO(2)_W x SO(2)_A type", "order": 32}, {"dim": 2, "eff": 2, "has3": false, "name": "SO(2)_A-avg type", "order": 4}, {"dim": 0, "eff": 1, "has3": false, "name": "generic (non-product)", "order": 2}]}
