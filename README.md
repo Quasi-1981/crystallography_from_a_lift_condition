@@ -70,5 +70,5 @@ neither superseded value appears in the shipped code or logs. The correction is 
 ## Citing
 
 Cite via the **concept DOI**, which always resolves to the latest version:
-**https://doi.org/10.5281/zenodo.22068307**. The DOI for this specific version (1.0.0) is
-`10.5281/zenodo.22068308`. `CITATION.cff` carries the concept DOI.
+**https://doi.org/10.5281/zenodo.22068307**. Per-version DOIs are listed on the Zenodo record.
+`CITATION.cff` carries the concept DOI.
