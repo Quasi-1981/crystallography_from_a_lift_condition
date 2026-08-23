@@ -16,7 +16,7 @@ Everything else in this repository exists so that the paper's computational stat
 | `src/symbolic/S15xx_*.py` | the probes — one per computational claim (below) |
 | `src/symbolic/*_run.log` | what each probe printed when it was run in this repository |
 | `test/_teeth.py` | the assertion harness that gives every detector a negative control |
-| `ERRATA.md` | two numbers corrected in an earlier draft, recorded for transparency |
+| `history/ERRATA.md` | corrections and clarifications, kept as a permanent record — history is not rewritten |
 | `citation.yaml`, `CITATION.cff`, `.zenodo.json` | citation metadata; `citation.yaml` is the single source, the other two are generated from it |
 | `LICENSE`, `LICENSE-CODE`, `NOTICE` | CC BY 4.0 for the text, Apache 2.0 for the code, and the attribution notice |
 
@@ -65,7 +65,7 @@ a private system: each one is a file in this repository, listed in the tables ab
 statement it supports. Every log was produced by running the file as it stands here.
 
 **On one correction.** Two numbers in an earlier draft were wrong and were corrected before this release;
-neither superseded value appears in the shipped code or logs. The correction is recorded in `ERRATA.md`.
+neither superseded value appears in the shipped code or logs. The correction is recorded in `history/ERRATA.md`.
 
 ## Citing
 
