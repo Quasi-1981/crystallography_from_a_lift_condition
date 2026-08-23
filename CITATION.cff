@@ -1,12 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "Crystallography from a lift condition (Geometry of the vacuum, floor 0)"
-version: "0.1.0-draft"
+version: "1.0.0"
 type: software
 authors:
   - family-names: "Sobol"
     given-names: "Vladimir"
 license: CC-BY-4.0
+doi: "10.5281/zenodo.22068307"
 date-released: "2026-08-21"
 keywords:
   - "real quadratic spaces"

@@ -14,8 +14,8 @@ title: "Crystallography from a lift condition"
 series: "Geometry of the vacuum, floor 0"
 
 # Версія — за словом автора перед релізом (правило препринтів 1–5: бамп ПЕРЕД
-# тегом, бо Zenodo карбує метадані в момент GitHub-релізу).
-version: "0.1.0-draft"
+# тегом, бо Zenodo карбує метадані в момент GitHub-релізу). GitHub-реліз = 1.0.0.
+version: "1.0.0"
 
 # Дата — за словом автора при релізі (DRAFT).
 date_released: "2026-08-21"
@@ -24,8 +24,10 @@ date_released: "2026-08-21"
 # ★DOI-ПРАВИЛО (як препринти 1–5): concept-DOI програми через інтеграцію
 # GitHub→Zenodo; версійний DOI видається Zenodo В МОМЕНТ тегу релізу. Тут —
 # ПОРОЖНЬО до релізу (не вигадувати id).
-doi: null
-concept_doi: null            # ⚠не вигадувати — заповнює Zenodo при першому релізі
+# `doi` тут = CONCEPT-DOI (у CITATION.cff, «cite all versions», завжди-остання).
+# Per-version DOI релізу 1.0.0 = 10.5281/zenodo.22068308 (сторінка запису Zenodo).
+doi: "10.5281/zenodo.22068307"
+concept_doi: "10.5281/zenodo.22068307"
 
 creators:
   - name: "Sobol, Vladimir"

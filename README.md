@@ -69,5 +69,6 @@ neither superseded value appears in the shipped code or logs. The correction is 
 
 ## Citing
 
-Use the concept DOI recorded in `CITATION.cff` once the archive record is minted (Zenodo). Until then,
-cite by title and author.
+Cite via the **concept DOI**, which always resolves to the latest version:
+**https://doi.org/10.5281/zenodo.22068307**. The DOI for this specific version (1.0.0) is
+`10.5281/zenodo.22068308`. `CITATION.cff` carries the concept DOI.
