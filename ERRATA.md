@@ -32,6 +32,32 @@ finite group). The contaminated enumeration is not used anywhere in this release
 `[3, 7, ≥13]` at ranks `p = 2, 3, 4`, with the mechanism reproduced `267/267` at `p = 5`. This is the
 value the paper carries (§6, §7, and the Main Theorem).
 
+## Clarifications
+
+A *clarification* is not an erratum: no number is wrong. It records a place where a claim was
+**strengthened to what is actually proved**, without any value changing.
+
+## C1 (v1.0.1) — §9, Main Theorem (7): the discriminant-form statement, sharpened
+
+**What v1.0.0 said.** The clause about the holohedry image read that it "factors through" / "is determined
+by (measured on the swept range)" the discriminant form.
+
+**Why that was weaker than the proofs.** It conflated two levels and under-stated the derived content.
+Split into what each part actually is:
+
+- ***Membership*** — which lattices `L`, hence which holohedries, are realised as sections — **is decided
+  by the discriminant form. This is derived** (the forward implication together with Lemma 7, for
+  `p ≢ 1 (mod 8)`), not merely measured.
+- ***The image itself*** — the count `[3,7,13]` at `p = 2,3,4` and the mechanism at `p = 5` (`267/267`) —
+  **is measured.**
+
+The phrase "factors through" is removed, because it reads as *"the holohedry is a function of the
+discriminant form"*, which is false: different lattices `L` with the *same* discriminant form can have
+*different* holohedries `O(L)`.
+
+**No number changed.** This is a strengthening of the claim to what the proofs establish, not a correction
+of a wrong value.
+
 ---
 
 *Recorded 2026-08-23. The corrections are in the paper; this file is the record that they were made.*
