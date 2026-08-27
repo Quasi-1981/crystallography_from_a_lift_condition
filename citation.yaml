@@ -26,6 +26,7 @@ date_released: "2026-08-27"
 # ПОРОЖНЬО до релізу (не вигадувати id).
 # `doi` тут = CONCEPT-DOI (у CITATION.cff, «cite all versions», завжди-остання).
 # Per-version DOI релізу 1.0.0 = 10.5281/zenodo.22068308 (сторінка запису Zenodo).
+# Per-version DOI релізу 1.0.2 = 10.5281/zenodo.22125611 (ерратум E3 + C2, 2026-08-27).
 doi: "10.5281/zenodo.22068307"
 concept_doi: "10.5281/zenodo.22068307"
 
