@@ -4,7 +4,7 @@
   "publication_type": "preprint",
   "description": "A single deep wedge in the orthogonal Lie algebra so(5,3) induces on its transverse quotient a metric of signature exactly (3,1), and the equivariance of the degree-0 floor built over it forces that same metric as the unique so(W)-equivariant bracket of one family. On this structure two compactifiers are measured — a positivity compactifier cutting the Levi to a compact SO(3)×SO(2), and an arithmetic thickness of the integrality stabiliser Γ (measured as a thick/thin CONTRAST; finite covolume itself is cited from Borel–Harish-Chandra, not measured) — whose weave gives a finite-volume moduli. A canonical lattice does NOT exist (the daughter's symmetry acts with 3-dimensional orbits on an irreducible space); what exists is a CLASS of lattices whose finite point groups arise, per stratum, as the intersection of a compact positivity stabiliser with the arithmetic group, so a crystallographic class is a PAIR (lattice, timelike section). Read as a function of the parent signature, the map singles out the signature with exactly one timelike direction (q_d = 1, as geometry), not the dimension. No new constant is introduced beyond the inherited scale; no physical reading of any object (\"time\", \"energy\", \"mass\") is made; every classical ingredient (Witt, Stone–von-Neumann, Mumford's polarisation type, Borel–Harish-Chandra) is cited, not re-derived; and every number is checked by a self-contained probe whose reference output ships with it.",
   "license": "CC-BY-4.0",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "language": "eng",
   "keywords": [
     "real quadratic spaces",
@@ -36,5 +36,5 @@
     }
   ],
   "notes": "Text: CC-BY-4.0. Code: Apache-2.0. Contributors listed above are AI models used in the work; per-artifact attribution is recorded in the git history (Co-Authored-By trailers).",
-  "publication_date": "2026-08-23"
+  "publication_date": "2026-08-27"
 }

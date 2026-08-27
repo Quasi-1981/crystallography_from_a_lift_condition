@@ -64,8 +64,13 @@ what `test/_teeth.py` enforces.
 a private system: each one is a file in this repository, listed in the tables above and bound to the
 statement it supports. Every log was produced by running the file as it stands here.
 
-**On one correction.** Two numbers in an earlier draft were wrong and were corrected before this release;
-neither superseded value appears in the shipped code or logs. The correction is recorded in `history/ERRATA.md`.
+**On the corrections.** Two numbers in an earlier draft were wrong and were corrected before the first
+release; neither superseded value appears in the shipped code or logs. In `v1.0.2` a further correction
+was made — not to a number but to the *scope* of the section law: its reverse leg holds for
+`p ≢ 1 (mod 8)` and **fails** at `p ≡ 1 (mod 8)`, where the discriminant form no longer fixes the parity
+of the ambient (witness `E₈ ⊕ ⟨2⟩` against `I₈ ⊕ ⟨2⟩` at `p = 9`). Every measured signature of this paper
+is `p = 2, 3, 4, 5`, so no value in the paper, the code or the logs is affected. All corrections are
+recorded in `history/ERRATA.md`.
 
 ## Citing
 
